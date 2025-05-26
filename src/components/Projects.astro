@@ -11,6 +11,7 @@ import Ejs from "./icons/Ejs.astro";
 import Bootstrap from "./icons/Bootstrap.astro";
 import Link from "./icons/Link.astro";
 import LinkButton from "./LinkButton.astro";
+import Typescript from "./icons/Typescript.astro";
 
 const TAGS = {
   NEXT: {
@@ -19,7 +20,7 @@ const TAGS = {
     icon: NextJS,
   },
   TAILWIND: {
-    name: "Tailwind CSS",
+    name: "Tailwind",
     class: "bg-[#003159] text-white",
     icon: Tailwind,
   },
@@ -58,6 +59,11 @@ const TAGS = {
     class: "bg-[#003159] text-white",
     icon: Node,
   },
+  TYPESCRIPT: {
+    name: "Typescript",
+    class: "bg-[#003159] text-white",
+    icon: Typescript,
+  },
 };
 const PROJECTS = [
   {
@@ -69,7 +75,16 @@ const PROJECTS = [
     github: "",
     tags: [TAGS.PYTHON, TAGS.EJS, TAGS.BOOTSTRAP],
   },
-/*   {
+  {
+    title: "CV - Curriuculum Vitae Interactivo",
+    description:
+      "Curriculum Vitae interactivo y responsive, creado con Next.js, Tailwind y TypeScript. Permite descargar el CV en formato PDF.",
+    link: "https://matipretz-cv.vercel.app/",
+    image: "/projects/cv.webp",
+    github: "",
+    tags: [TAGS.NEXT, TAGS.TAILWIND, TAGS.TYPESCRIPT],
+  },
+  /*   {
     title: "Nitrox Refrigeración",
     description:
       "Landing de producto y comercio electrónico construido desde cero con Express, MongoDB, React y Tailwind CSS. Primer contrato freelance 🎉",
@@ -78,7 +93,7 @@ const PROJECTS = [
     github: "",
     tags: [TAGS.MONGO, TAGS.EXPRESS,TAGS.REACT,TAGS.NODE],
   }, */
-];
+  ];
 ---
 
 <div class="flex flex-col gap-y-16">

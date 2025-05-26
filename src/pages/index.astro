@@ -12,8 +12,8 @@ import Hero from "@/components/Hero.astro";
 ---
 
 <Layout
-  title="Porfolio de Mati Pretz - Desarrollador Web"
-  description="Contrata a Mati Pretz para crear tu aplicación web o móvil. Especializado en crear aplicaciones MERN."
+  title="Mati Pretz - Desarrollador Web"
+  description="Especializado en crear aplicaciones MERN."
 >
   <main class="px-4">
     <SectionContainer class="py-16 md:py-36">
@@ -21,16 +21,6 @@ import Hero from "@/components/Hero.astro";
     </SectionContainer>
   </main>
   <div class="space-y-24">
-    <SectionContainer id="experiencia">
-      <h2
-        class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white"
-      >
-        <Briefcase class="size-8" />
-        Experiencia
-      </h2>
-      <Experience />
-    </SectionContainer>
-
     <SectionContainer id="proyectos">
       <h2
         class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white"
@@ -39,6 +29,16 @@ import Hero from "@/components/Hero.astro";
         Proyectos
       </h2>
       <Projects />
+    </SectionContainer>
+    
+    <SectionContainer id="experiencia">
+      <h2
+        class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white"
+      >
+        <Briefcase class="size-8" />
+        Experiencia
+      </h2>
+      <Experience />
     </SectionContainer>
 
     <SectionContainer id="sobre-mi">
